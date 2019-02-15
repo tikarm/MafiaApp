@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_red_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/player_id_create"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/appBarLayout4"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--&gt;-->
+
+    <!--<android.support.design.widget.TextInputEditText-->
+        <!--android:id="@+id/set_id"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:hint="Խաղացողի համարը"-->
+        <!--android:singleLine="true"-->
+        <!--/>-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/player_name_create"
+        android:layout_width="@dimen/create_edit_name_width"
+        android:layout_height="@dimen/create_edit_name_height"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/create_edit_name_marginTop"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/set_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/player_name_field_hint"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save_hint"
+        android:id="@+id/button_save_create"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout4"
+        app:layout_constraintStart_toEndOf="@id/player_name_create"
+        android:layout_marginTop="@dimen/button_save_marginTop"
+        android:layout_marginStart="@dimen/button_save_marginStart"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

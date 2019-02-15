@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mafia</string>
+    <string name="action_settings">Settings</string>
+    <string name="player_name_field_hint">Խաղացողի անունը</string>
+    <string name="button_save_hint">Save</string>
+    <string name="cards_button_text">Հաջորդ</string>
+    <string name="hide_buttons">Hide Buttons</string>
+    <string name="view_player_button_dead_text">Հանել</string>
+</resources>
